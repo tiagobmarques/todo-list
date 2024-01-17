@@ -1,24 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/header/header";
+import Button from "./components/button/button";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="List">
+        <div className="item">
+          <label>
+            <input type="checkbox" />
+            <p>item 1</p>
+          </label>
+          <button>delete</button>
+          <button>edit</button>
+        </div>
+        <div className="item"></div>
+        <div className="item">
+          <label>
+            <input type="checkbox" />
+            <p>item 2</p>
+          </label>
+          <button>delete</button>
+          <button>edit</button>
+        </div>
+        <div className="item">
+          <label>
+            <input type="checkbox" />
+            <p>item 3</p>
+          </label>
+          <button>delete</button>
+          <button>edit</button>
+        </div>
+      </div>
+      <footer>
+        <p>Copyright 2024 - wBrain React Clas</p>
+      </footer>
     </div>
   );
 }
